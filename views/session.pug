@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts 
+    script(src='../static/test.js')
+
+block style 
+  style
+      include ../static/style.css
+      include ../static/aboutStyle.css
+block content
+    nav#navbar
+        ul
+            div#logo
+              a(href='/')
+                img(src="/static/logo.png")
+            #myDIV  
+              li #[a.btn1(href='/') Home]
+              li #[a.btn1(href='/about') About]
+              li #[a.btn1(href='/services') Services]
+              li #[a.btn1.active(href='/session') Sessions info]
+              li #[a.btn1(href='/bmi') BMI Calculator]
+              li #[a.btn1(href='/contact') Contact us]
+    .container
+        section#row1
+            h1
+                | Opening and Closing Times 
+            p
+                | Lorem Ipsum
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        section#row1
+            h1
+                | Live Classes
+            p
+                | Lorem Ipsum
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        section#row3
+            h1
+                | Gym Membership Offers 
+            p
+                | Lorem Ipsum
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+            div#sponsors
+                img(src="/static/achi1.jpg", class="spimage")
+                img(src="/static/logo1.png", class="spimage")
+                img(src="/static/achi2.jpg", class="spimage")                  

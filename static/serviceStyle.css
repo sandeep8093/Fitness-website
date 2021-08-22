@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: center/cover no-repeat url('/static/bg4.png');
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+#row1,
+#row2 {
+  color: black;
+  padding: 20px;
+  margin: 30px;
+  padding-bottom: 40px;
+  font-family: 'Comfortaa', cursive;
+}
+#row1 {
+  text-align: left;
+}
+#row2 {
+  text-align: right;
+}
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 45px;
+}
+h1:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+h2 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 65px;
+  text-decoration: underline;
+}
+p {
+  padding: 30px;
+}
+.left,
+.right {
+  height: 300px;
+  width: 20%;
+}
+.left:hover,
+.right:hover {
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

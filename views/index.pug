@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+ head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title Sandy 's Fitness Center
+  style
+      include ../static/style.css
+ body 
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+              
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Sessions Info]
+            li #[a(href="/") Contact Us]
+section#introSection
+        div Welcome to Sandy 's Fitness Center
+        div.small No Pain No Gain
+section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Fitness Goals
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua. 
+
+        div.card
+            h3 Shape your body
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua. 
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/3.png")
+
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua.  
+section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/logo1.png", class="spimage")
+            img(src="/static/logo2.png", class="spimage")
+            img(src="/static/logo3.png", class="spimage")
+            img(src="/static/logo4.png", class="spimage")
+footer#footer
+        | Copyright 2019 © Sandy's Fitness Center |  All Rights Reserved

@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/test.js")
+block style 
+  style
+      include ../static/style.css
+      include ../static/bmiStyle.css
+  
+block content
+    nav#navbar
+        ul
+            div#logo
+              a(href='/')
+                img(src="/static/logo.png")
+            #myDIV  
+              li #[a.btn1(href='/') Home]
+              li #[a.btn1(href='/about') About]
+              li #[a.btn1(href='/services') Services]
+              li #[a.btn1(href='/session') Sessions info]
+              li #[a.btn1.active(href='/bmi') BMI Calculator]
+              li #[a.btn1(href='/contact') Contact us]
+    div.body
+        div.container
+            h2 BMI Calculator
+            p.text Height
+            input#h( type='text' name='name' placeholder='Enter your height in cm')
+            p.text Weight
+            input#w(type='text' name='name' placeholder='Enter your weight in kg')
+            p#result
+            button#btn(onclick='BMI()') Check BMI
+            p#info1 || A healthy BMI ranges between 19 to 25 ||
+    script(type='text/javascript').
+        function BMI() {
+        var h=document.getElementById('h').value;
+        var w=document.getElementById('w').value;
+        var bmi=w/(h/100*h/100);
+        var bmio=(bmi.toFixed(2));
+        document.getElementById("result").innerHTML="Your BMI is " + bmio;
+        }

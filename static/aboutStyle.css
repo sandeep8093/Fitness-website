@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: center/cover no-repeat url('/static/bg.jpg');
+  opacity: 0.8;
+  text-align: center;
+}
+#row1,
+#row2,
+#row3 {
+  color: white;
+  padding: 20px;
+  margin: 30px;
+  padding-bottom: 50px;
+  font-family: 'Comfortaa', cursive;
+}
+#row2 {
+  height: 950px;
+  width: 80%;
+  margin: auto;
+}
+.card {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 31%;
+  margin: 30px 10px;
+  height: 750px;
+  background-color: #b31c1cc7;
+}
+.card-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-img {
+  height: 200px;
+  padding: 0 14px;
+  margin: 40px auto;
+}
+.card-img img {
+  height: inherit;
+}
+.card-content {
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
+  padding-top: 20px;
+}
+.card h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 0 10px;
+  margin-top: 22px;
+  font-family: 'Comfortaa', cursive;
+}
+h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+h1:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+p {
+  padding-top: 20px;
+}
+#sponsors {
+  height: 300px;
+  width: 100%;
+}
+.spimage {
+  height: 250px;
+}
+.spimage:hover {
+  border: 4px solid white;
+  border-radius: 8px;
+  transition: 0.3s;
+}

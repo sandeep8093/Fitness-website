@@ -1,0 +1,59 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/test.js")
+block style 
+  style
+      include ../static/style.css
+block content
+    nav#navbar
+        ul
+            div#logo
+              a(href='/')
+                img(src="/static/logo.png")
+            #myDIV  
+              li #[a.btn1.active(href='/') Home]
+              li #[a.btn1(href='/about') About]
+              li #[a.btn1(href='/services') Services]
+              li #[a.btn1(href='/session') Sessions info]
+              li #[a.btn1(href='/bmi') BMI Calculator]
+              li #[a.btn1(href='/contact') Contact us]
+    section#introSection
+        div(style='text-align:center ; font-size:80px') Welcome to <br/>Sandy 's Fitness Center
+        div.small No Pain No Gain
+        a(href='/about')
+            button.btn Take a tour now...
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Fitness Goals
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua. 
+
+        div.card
+            h3 Shape your body
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua. 
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/3.png")
+
+                div.card-content
+                    p This is the best Fitness Center of the universe.incididunt ut labore et dolore magna aliqua.  
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/logo1.png", class="spimage")
+            img(src="/static/logo2.png", class="spimage")
+            img(src="/static/logo3.png", class="spimage")
+            img(src="/static/logo4.png", class="spimage")
