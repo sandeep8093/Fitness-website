@@ -1,3 +1,3 @@
 # Fitness-website
 
-checkout at: https://gymandfitness.herokuapp.com/
+checkout at: https://fitness-service-static.onrender.com/
