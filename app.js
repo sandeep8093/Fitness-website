@@ -2,9 +2,14 @@ const express = require('express');
 const path = require('path');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/contactFit', {
+mongoose.connect('mongodb+srv://admin-sandeep:Nayak_8093@cluster0.lx2wd.mongodb.net/gym_of_sandy?authSource=admin&replicaSet=atlas-14d3p6-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+}).then(() => {
+  console.log('mongodb connected !!!');
+})
+.catch((err) => {
+  console.log(err);
 });
 const app = express();
 const port = process.env.PORT || 8000;
